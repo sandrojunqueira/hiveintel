@@ -1,0 +1,107 @@
+/* ── Brand palette (source of truth: Hive Intel brand sheet) ───────────── */
+:root{
+--hive-black:#000000;
+--hive-white:#FCFCFC;
+--hive-mist:#E4E4E4;
+--hive-violet:#624FB7;
+--hive-indigo:#6536A1;
+--hive-electric:#9716F6;
+--hive-orchid:#9F4DB0;
+--hive-magenta:#DE3E7B;
+--hive-slate:#60598C;
+
+/* ── Neutral ramp (dark-first, cool violet-biased blacks) ───────────────── */
+--neutral-1000:#000000;
+--neutral-950:#08060C;
+--neutral-900:#0D0A14;
+--neutral-850:#12101B;
+--neutral-800:#191624;
+--neutral-700:#221E2F;
+--neutral-600:#2E2940;
+--neutral-500:#413B57;
+--neutral-400:#60598C;
+--neutral-300:#8A85A8;
+--neutral-200:#B6B2C8;
+--neutral-100:#E4E4E4;
+--neutral-0:#FCFCFC;
+
+/* ── Alpha utilities (for glass panels + hairlines on dark) ─────────────── */
+--white-a04:rgba(252,252,252,.04);
+--white-a08:rgba(252,252,252,.08);
+--white-a12:rgba(252,252,252,.12);
+--white-a24:rgba(252,252,252,.24);
+--white-a56:rgba(252,252,252,.56);
+--white-a72:rgba(252,252,252,.72);
+--black-a40:rgba(0,0,0,.4);
+--black-a64:rgba(0,0,0,.64);
+--electric-a16:rgba(151,22,246,.16);
+--electric-a32:rgba(151,22,246,.32);
+--magenta-a16:rgba(222,62,123,.16);
+--magenta-a32:rgba(222,62,123,.32);
+
+/* ── Semantic: surfaces ────────────────────────────────────────────────── */
+--surface-page:var(--neutral-1000);
+--surface-raised:var(--neutral-900);
+--surface-card:var(--neutral-850);
+--surface-card-hover:var(--neutral-800);
+--surface-inset:var(--neutral-950);
+--surface-glass:rgba(13,10,20,.72);
+--surface-invert:var(--neutral-0);
+
+/* ── Semantic: text ───────────────────────────────────────────────────── */
+--text-primary:var(--neutral-0);
+--text-body:var(--neutral-200);
+--text-muted:var(--neutral-300);
+--text-faint:var(--neutral-400);
+--text-accent:var(--hive-electric);
+--text-on-accent:var(--neutral-0);
+--text-on-light:var(--neutral-1000);
+
+/* ── Semantic: lines ──────────────────────────────────────────────────── */
+--border-hairline:var(--white-a08);
+--border-subtle:var(--white-a12);
+--border-strong:var(--white-a24);
+--border-accent:var(--hive-electric);
+
+/* ── Semantic: interactive ────────────────────────────────────────────── */
+--accent:var(--hive-electric);
+--accent-deep:var(--hive-indigo);
+--accent-soft:var(--hive-violet);
+--accent-warm:var(--hive-magenta);
+--focus-ring:rgba(151,22,246,.56);
+
+/* ── Semantic: status ─────────────────────────────────────────────────── */
+--status-positive:#3FCF8E;
+--status-caution:#F5B547;
+--status-critical:var(--hive-magenta);
+--status-info:var(--hive-violet);
+
+/* ── Gradients — the brand's single most recognisable device ───────────── */
+--grad-hive:linear-gradient(135deg,#9716F6 0%,#9F4DB0 48%,#DE3E7B 100%); /* @kind color */
+--grad-hive-v:linear-gradient(180deg,#9716F6 0%,#DE3E7B 100%); /* @kind color */
+--grad-hive-wide:linear-gradient(90deg,#624FB7 0%,#9716F6 34%,#9F4DB0 62%,#DE3E7B 100%); /* @kind color */
+--grad-hive-deep:linear-gradient(135deg,#6536A1 0%,#9716F6 55%,#DE3E7B 100%); /* @kind color */
+--grad-veil:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.72) 62%,#000 100%); /* @kind color */
+--grad-veil-up:linear-gradient(0deg,rgba(0,0,0,0) 0%,rgba(0,0,0,.86) 78%,#000 100%); /* @kind color */
+--grad-panel:linear-gradient(160deg,rgba(151,22,246,.10) 0%,rgba(222,62,123,.04) 55%,rgba(0,0,0,0) 100%); /* @kind color */
+--grad-hairline:linear-gradient(90deg,rgba(151,22,246,0) 0%,rgba(151,22,246,.72) 50%,rgba(222,62,123,0) 100%) /* @kind color */
+}
+
+/* Light scope — used sparingly, for printed/OOH and light data views. */
+[data-hive-theme="light"]{
+--surface-page:var(--neutral-0);
+--surface-raised:#FFFFFF;
+--surface-card:#FFFFFF;
+--surface-card-hover:#F6F5F9;
+--surface-inset:var(--neutral-100);
+--surface-glass:rgba(252,252,252,.78);
+--surface-invert:var(--neutral-1000);
+--text-primary:var(--neutral-1000);
+--text-body:#2E2940;
+--text-muted:var(--neutral-400);
+--text-faint:#9A96AE;
+--text-on-light:var(--neutral-1000);
+--border-hairline:rgba(0,0,0,.08);
+--border-subtle:rgba(0,0,0,.12);
+--border-strong:rgba(0,0,0,.22)
+}

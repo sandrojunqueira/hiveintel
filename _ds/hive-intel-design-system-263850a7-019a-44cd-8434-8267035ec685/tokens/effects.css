@@ -1,0 +1,27 @@
+:root{
+/* Shadows — on near-black, elevation reads as a soft coloured bloom, not grey drop */
+--shadow-none:none;
+--shadow-sm:0 1px 2px rgba(0,0,0,.6);
+--shadow-md:0 8px 24px -8px rgba(0,0,0,.8);
+--shadow-lg:0 24px 64px -16px rgba(0,0,0,.85);
+--shadow-card:0 1px 0 var(--white-a08) inset,0 16px 40px -20px rgba(0,0,0,.9);
+
+/* Glows — reserved for accent/active/hover states */
+--glow-accent:0 0 0 1px rgba(151,22,246,.4),0 0 28px -4px rgba(151,22,246,.45);
+--glow-accent-strong:0 0 0 1px rgba(151,22,246,.6),0 0 48px -4px rgba(151,22,246,.6);
+--glow-magenta:0 0 0 1px rgba(222,62,123,.4),0 0 28px -4px rgba(222,62,123,.45);
+--glow-hex:0 0 24px -6px rgba(151,22,246,.55),0 0 60px -12px rgba(222,62,123,.35);
+
+/* Focus */
+--ring:0 0 0 2px var(--surface-page),0 0 0 4px var(--focus-ring); /* @kind shadow */
+
+/* Blur */
+--blur-sm:6px; /* @kind other */
+--blur-md:14px; /* @kind other */
+--blur-lg:28px; /* @kind other */
+--backdrop-glass:blur(14px) saturate(140%); /* @kind other */
+
+/* Textures */
+--texture-hex:url("../assets/hex-bg.png"); /* @kind other */
+--grain-opacity:.05 /* @kind other */
+}
