@@ -1,0 +1,49 @@
+:root{
+/* Families */
+--font-display:var(--font-gotham);
+--font-body:var(--font-gotham);
+--font-eyebrow:var(--font-gotham);
+
+/* Weights — Gotham's real named weights */
+--fw-thin:100; /* @kind font */
+--fw-xlight:200; /* @kind font */
+--fw-light:300; /* @kind font */
+--fw-book:400; /* @kind font */
+--fw-medium:500; /* @kind font */
+--fw-bold:700; /* @kind font */
+--fw-ultra:900; /* @kind font */
+
+/* Size scale — 1.25 major-third-ish, hand-tuned at display end */
+--fs-3xs:11px;--fs-2xs:12px;--fs-xs:13px;--fs-sm:15px;--fs-base:17px;--fs-md:19px;--fs-lg:22px;
+--fs-xl:27px;--fs-2xl:34px;--fs-3xl:44px;--fs-4xl:56px;--fs-5xl:72px;--fs-6xl:96px;--fs-7xl:128px;
+
+/* Line heights */
+--lh-tight:0.98; /* @kind font */
+--lh-display:1.05; /* @kind font */
+--lh-snug:1.2; /* @kind font */
+--lh-normal:1.45; /* @kind font */
+--lh-relaxed:1.65; /* @kind font */
+
+/* Tracking — display is negative, eyebrows/labels are wide-tracked caps */
+--ls-display:-0.03em; /* @kind font */
+--ls-heading:-0.015em; /* @kind font */
+--ls-body:0em; /* @kind font */
+--ls-label:0.06em; /* @kind font */
+--ls-eyebrow:0.22em; /* @kind font */
+--ls-logo:0.3em; /* @kind font */
+
+/* Composed roles */
+--type-hero:var(--fw-bold) var(--fs-6xl)/var(--lh-tight) var(--font-display); /* @kind font */
+--type-display:var(--fw-bold) var(--fs-4xl)/var(--lh-display) var(--font-display); /* @kind font */
+--type-h1:var(--fw-bold) var(--fs-3xl)/var(--lh-display) var(--font-display); /* @kind font */
+--type-h2:var(--fw-medium) var(--fs-2xl)/var(--lh-snug) var(--font-display); /* @kind font */
+--type-h3:var(--fw-medium) var(--fs-xl)/var(--lh-snug) var(--font-display); /* @kind font */
+--type-h4:var(--fw-medium) var(--fs-lg)/var(--lh-snug) var(--font-display); /* @kind font */
+--type-lead:var(--fw-light) var(--fs-md)/var(--lh-relaxed) var(--font-body); /* @kind font */
+--type-body:var(--fw-book) var(--fs-base)/var(--lh-normal) var(--font-body); /* @kind font */
+--type-body-sm:var(--fw-book) var(--fs-sm)/var(--lh-normal) var(--font-body); /* @kind font */
+--type-label:var(--fw-medium) var(--fs-xs)/var(--lh-snug) var(--font-body); /* @kind font */
+--type-eyebrow:var(--fw-medium) var(--fs-2xs)/var(--lh-snug) var(--font-eyebrow); /* @kind font */
+--type-caption:var(--fw-book) var(--fs-2xs)/var(--lh-normal) var(--font-body); /* @kind font */
+--type-metric:var(--fw-bold) var(--fs-5xl)/var(--lh-tight) var(--font-display) /* @kind font */
+}
