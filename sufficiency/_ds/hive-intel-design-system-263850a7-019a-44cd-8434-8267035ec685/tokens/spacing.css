@@ -1,0 +1,40 @@
+:root{
+/* 4px base grid; 8px is the working rhythm */
+--space-0:0px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-5:20px;--space-6:24px;
+--space-7:32px;--space-8:40px;--space-9:48px;--space-10:64px;--space-11:80px;--space-12:96px;--space-13:128px;--space-14:160px;
+
+/* Section rhythm for marketing pages */
+--section-y:var(--space-13); /* @kind spacing */
+--section-y-tight:var(--space-11); /* @kind spacing */
+--gutter:var(--space-6); /* @kind spacing */
+
+/* Content widths */
+--width-page:1280px; /* @kind spacing */
+--width-content:1080px; /* @kind spacing */
+--width-prose:660px; /* @kind spacing */
+--width-narrow:520px; /* @kind spacing */
+
+/* Radii — the brand is squarer than it is soft; hexes carry the character */
+--radius-0:0px;--radius-xs:3px;--radius-sm:6px;--radius-md:10px;--radius-lg:16px;--radius-xl:24px;--radius-2xl:32px;--radius-pill:999px;
+--radius-card:var(--radius-lg);
+--radius-control:var(--radius-sm);
+--radius-chip:var(--radius-pill);
+
+/* Border widths */
+--stroke-hairline:1px; /* @kind spacing */
+--stroke-1:1px; /* @kind spacing */
+--stroke-2:2px; /* @kind spacing */
+--stroke-3:3px; /* @kind spacing */
+
+/* Hex geometry — the flat-top hexagon used across the brand */
+--hex-clip:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%); /* @kind other */
+--hex-clip-pointy:polygon(50% 0%,100% 25%,100% 75%,50% 100%,0% 75%,0% 25%); /* @kind other */
+
+/* Layering */
+--z-base:0; /* @kind other */
+--z-raised:10; /* @kind other */
+--z-sticky:100; /* @kind other */
+--z-overlay:400; /* @kind other */
+--z-modal:500; /* @kind other */
+--z-toast:600 /* @kind other */
+}
